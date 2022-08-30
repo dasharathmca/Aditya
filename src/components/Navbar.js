@@ -1,27 +1,27 @@
 import React from "react";
-import {useState} from 'react'
+// import {useState} from 'react'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {HashLink as Link} from "react-router-hash-link";
 
 
 const Navbar = () => {
-  const [fix, setFix] = useState(false)
+  // const [fix, setFix] = useState(false)
 
-  function setFixed(){
-    if(window.scrollY >= 392){
-      setFix = true
-    }
-    else{
-      setFix = false
-    }
+  // function setFixed(){
+  //   if(window.scrollY >= 392){
+  //     setFix = true
+  //   }
+  //   else{
+  //     setFix = false
+  //   }
 
-    window.addEventListener("scroll",setFixed)
+  //   window.addEventListener("scroll",setFixed)
 
-  }
+  //}
   return (
     <Router>
     <nav className="navbar">
-      <div className="navbar__text fix">
+      <div className="navbar__text">
         <div className="logo">
           <br></br><br></br><br></br>
           <img src="/img/logo.png" alt="logo" />
